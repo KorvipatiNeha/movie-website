@@ -1,0 +1,118 @@
+/* Remove default browser spacing */
+* {
+    margin: 0; /* Removes outer spacing */
+    padding: 0; /* Removes inner spacing */
+    box-sizing: border-box; /* Includes padding inside width */
+    font-family: "Comic Sans MS", cursive; /* Kid-friendly font */
+}
+
+/* Night sky gradient background */
+body {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: white; /* Text color */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Twinkling star layer */
+.stars {
+    position: fixed; /* Fixed to screen */
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    animation: twinkle 4s infinite alternate; /* Animation */
+    z-index: -1; /* Behind content */
+}
+
+/* Star twinkle animation */
+@keyframes twinkle {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+}
+
+
+/* Moon styling */
+.moon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 60px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Menu layout */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Menu card styling */
+.genre {
+    background: rgba(255, 215, 0, 0.1);
+    border: 2px solid gold;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 20px gold;
+    transition: transform 0.3s;
+    
+}
+
+
+
+/* Card hover effect */
+.genre:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px yellow;
+}
+
+
+/* Poster styling */
+.movie img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* Rating stars */
+.rating {
+    color: gold;
+    margin: 5px 0;
+}
+
+/* Watch trailer button */
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: purple;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px violet;
+    transition: 0.3s;
+}
+
+/* Button hover glow */
+.btn:hover {
+    background: gold;
+    color: black;
+    box-shadow: 0 0 15px yellow;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
