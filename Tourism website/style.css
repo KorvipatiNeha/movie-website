@@ -1,0 +1,181 @@
+/* Global */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html,body{
+    overflow-x:hidden;
+}
+
+body{
+    background:#f4f4f4;
+    position:relative;
+}
+
+/* Decorative Borders */
+
+body::before,
+body::after{
+    content:"";
+    position:fixed;
+    top:0;
+    width:10px;
+    height:100%;
+    z-index:0;
+}
+
+body::before{
+    left:0;
+    background:linear-gradient(#5a0000,#ffcc00,#5a0000);
+}
+
+body::after{
+    right:0;
+    background:linear-gradient(#5a0000,#ffcc00,#5a0000);
+}
+
+/* Container */
+
+.container{
+    max-width:1100px;
+    margin:20px auto;
+    background:#fff;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    position:relative;
+    z-index:1;
+}
+
+/* Title */
+
+.title{
+    text-align:center;
+    padding:30px;
+    background:#5a0000;
+    color:white;
+    letter-spacing:2px;
+    border-bottom:5px solid #ffcc00;
+}
+
+/* Temple */
+
+.temple{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    gap:40px;
+    padding:40px 25px;
+}
+
+.temple img{
+    width:300px;
+    max-width:100%;
+    height:auto;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+/* Information */
+
+.info{
+    max-width:600px;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.info h2{
+    margin-bottom:15px;
+    color:#5a0000;
+}
+
+/* Buttons */
+
+.btn{
+    margin-top:20px;
+}
+
+.btn button{
+    padding:10px 18px;
+    margin-right:10px;
+    margin-bottom:10px;
+    border:none;
+    background:#5a0000;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn button:hover{
+    opacity:.85;
+}
+
+/* Divider */
+
+hr{
+    border:1px solid #ccc;
+}
+
+/* Gallery */
+
+.gallery{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.gallery h2{
+    margin-bottom:20px;
+    color:#5a0000;
+}
+
+.gallery img{
+    width:220px;
+    max-width:100%;
+    margin:10px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* Video */
+
+.video{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.video h2{
+    margin-bottom:20px;
+    color:#5a0000;
+}
+
+.video iframe{
+    width:90%;
+    max-width:600px;
+    height:300px;
+    border:none;
+    border-radius:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#5a0000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+    .temple{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+}
